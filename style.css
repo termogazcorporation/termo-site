@@ -1,0 +1,154 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #333;
+}
+
+header {
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+.logo {
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #c00;
+  font-weight: bold;
+}
+
+section {
+  padding: 40px 30px;
+  border-bottom: 1px solid #eee;
+}
+
+footer {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.despre-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.despre-content img {
+  width: 300px;
+  border-radius: 10px;
+}
+.despre-content div {
+  max-width: 600px;
+}
+
+.faq-list {
+  list-style: none;
+  padding: 0;
+}
+.faq-list li {
+  margin-bottom: 20px;
+}
+.faq-list strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #c00;
+}
+.faq-list p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #c00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #900;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .despre-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .serviciu {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .serviciu img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .contact-form {
+    width: 90%;
+  }
+}
